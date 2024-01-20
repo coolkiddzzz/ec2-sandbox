@@ -1,20 +1,20 @@
 # EC2 Sandbox
 
-## Exercise: Setting up AWS EC2 using terraform
+## Exercise: Initialise AWS EC2 using terraform
 - Perform setup using terraform
 - Perform ```terraform destroy``` after completing using EC2. 
 
 ## Exercise: Deploying python flask app using docker onto AWS EC2
 Prerequisites: 
 - AWS EC2 (created using terraform)
-- Run ```sudo yum install docker -y``` and ```sudo yum install git -y``` on AWS EC2 to install docker and git. 
+- On your EC2, run ```sudo yum install docker -y``` and ```sudo yum install git -y``` to install docker and git. 
 
 ### Using docker to launch application
 1. Connect to your EC2 using SSH client. 
 2. In your EC2 terminal, clone current repo using ```git clone https://github.com/coolkiddzzz/first-docker-exercise.git```
-3. Run docker as root user (using ```sudo -i```)
-4. Use docker to create docker image using ```docker build -t first-docker-exercise /home/first-docker-exercise/.```
-5. Start docker container using ```docker run -d -p 5000:5000 <image-name>```
+3. Check docker is installed: ```sudo -i docker --version```
+4. Create docker image: ```sudo docker build -t first-docker-exercise /home/first-docker-exercise/.```
+5. Start docker container: ```sudo docker run -d -p 5000:5000 <image-name>```
 
 ## Exercise: Create a Simple EC2 Web Server with Apache
 1. Install apache web server ```sudo yum install -y httpd``` in AWS EC2
