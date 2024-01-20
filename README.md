@@ -1,8 +1,8 @@
 # EC2 Sandbox
 
 ## Exercise: Setting up AWS EC2 using terraform
-This is an exercise to setup AWS EC2 using terraform. 
 - Perform setup using terraform
+- Perform ```terraform destroy``` after completing using EC2. 
 
 ## Exercise: Deploying python flask app using docker onto AWS EC2
 Prerequisites: 
